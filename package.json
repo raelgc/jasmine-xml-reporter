@@ -4,6 +4,7 @@
   "dependencies": {
     "jasmine-reporters": "^2.2.0"
   },
+  "author": "Rael Gugelmin Cunha <rael.gc@gmail.com> (http://raelcunha.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raelgc/jasmine-xml-reporter.git"
