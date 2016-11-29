@@ -1,6 +1,8 @@
 # Jasmine XML Reporter
 
-Jasmine 2 npm module ([`jasmine`](https://github.com/jasmine/jasmine-npm)) lost 2 features when compared with [`jasmine-node`](https://github.com/mhevery/jasmine-node) (no more maintained):
+This module adds the `--junitreport` and `--output` command-line params to Jasmine 2 npm module ([`jasmine`](https://github.com/jasmine/jasmine-npm)).
+
+Jasmine 2 npm module lost 2 features when compared with [`jasmine-node`](https://github.com/mhevery/jasmine-node) (no more maintained):
 
 - ability to provide results in JUnit XML format (using the `--junitreport' param);
 - an option to specify an output dir while running from the command line (`--output` param).
