@@ -20,3 +20,7 @@ To run tests and generate a JUnit XML report:
 To run tests, generate a JUnit XML report and place the output in a specific folder:
 
     ./node_modules/jasmine-xml-reporter/bin/jasmine.js --junitreport --output=shippable/testresults/
+
+If `npm test` is already an alias to `./node_modules/jasmine-xml-reporter/bin/jasmine.js`, then run with:
+
+    npm test -- --junitreport --output=shippable/testresults/
