@@ -1,0 +1,15 @@
+{
+  "name": "jasmine-xml-reporter",
+  "version": "1.0.0",
+  "dependencies": {
+    "jasmine-reporters": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raelgc/jasmine-xml-reporter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raelgc/jasmine-xml-reporter/issues"
+  },
+  "homepage": "https://github.com/raelgc/jasmine-xml-reporter#readme"
+}
