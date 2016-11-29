@@ -1,10 +1,11 @@
 {
   "name": "jasmine-xml-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "jasmine-reporters": "^2.2.0"
   },
   "author": "Rael Gugelmin Cunha <rael.gc@gmail.com> (http://raelcunha.com)",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raelgc/jasmine-xml-reporter.git"
