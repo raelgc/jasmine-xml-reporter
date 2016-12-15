@@ -9,9 +9,15 @@ Jasmine 2 npm module lost 2 features when compared with [`jasmine-node`](https:/
 
 This module uses [`jasmine-reporters`](https://github.com/larrymyers/jasmine-reporters) module to generate the JUnit XML report (when `--junitreport` param is present) and, optionally, place the generated files at folder specified by `--output` param.
 
+# Install
+
+Simple as any node module:
+
+    npm install jasmine-xml-reporter
+
 # Usage
 
-To run tests with command line output only (default, same as use `jasmine` directly):
+To run tests with command line output only (default behavior, same as use `jasmine` directly):
 
     ./node_modules/jasmine-xml-reporter/bin/jasmine.js
 
