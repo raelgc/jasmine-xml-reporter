@@ -4,7 +4,7 @@ This module adds the `--junitreport` and `--output` command-line params to Jasmi
 
 Jasmine 2 npm module lost 2 features when compared with [`jasmine-node`](https://github.com/mhevery/jasmine-node) (no more maintained):
 
-- ability to provide results in JUnit XML format (using the `--junitreport' param);
+- ability to provide results in JUnit XML format (using the `--junitreport` param);
 - an option to specify an output dir while running from the command line (`--output` param).
 
 This module uses [`jasmine-reporters`](https://github.com/larrymyers/jasmine-reporters) module to generate the JUnit XML report (when `--junitreport` param is present) and, optionally, place the generated files at folder specified by `--output` param.
