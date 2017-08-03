@@ -9,13 +9,18 @@ var JasmineXMLReporter = {
             switch(name){
                 case '--output':
                     if(value) JasmineXMLReporter.output_dir = value;
-                    return;
+                    return JasmineXMLReporter.remove(name);
                 case '--junitreport':
                     JasmineXMLReporter.junitreport = true;
-                    return;
+                    return JasmineXMLReporter.remove(name);
             }
         });
         return this.junitreport;
+    },
+    remove: function(argument){
+        var index = process.argv.indexOf(argument);
+        if(index !== -1) return process.argv.splice(index, 1);
+        return false;
     },
     attach_to: function(runner){
         var reporters = require('jasmine-reporters');
@@ -27,6 +32,6 @@ var JasmineXMLReporter = {
     }
 };
 
-if(JasmineXMLReporter.detect(process.argv)){
+if(JasmineXMLReporter.detect(process.argv.slice(2))){
     JasmineXMLReporter.attach_to(jasmine);
 }
