@@ -9,10 +9,10 @@ var JasmineXMLReporter = {
             switch(name){
                 case '--output':
                     if(value) JasmineXMLReporter.output_dir = value;
-                    return JasmineXMLReporter.remove(name);
+                    return JasmineXMLReporter.remove(param);
                 case '--junitreport':
                     JasmineXMLReporter.junitreport = true;
-                    return JasmineXMLReporter.remove(name);
+                    return JasmineXMLReporter.remove(param);
             }
         });
         return this.junitreport;
