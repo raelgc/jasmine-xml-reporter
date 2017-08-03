@@ -9,9 +9,11 @@ var JasmineXMLReporter = {
             switch(name){
                 case '--output':
                     if(value) JasmineXMLReporter.output_dir = value;
+                    process.argv.splice(i, 1);
                     return;
                 case '--junitreport':
                     JasmineXMLReporter.junitreport = true;
+                    process.argv.splice(i, 1);
                     return;
             }
         });
@@ -27,6 +29,6 @@ var JasmineXMLReporter = {
     }
 };
 
-if(JasmineXMLReporter.detect(process.argv)){
+if(JasmineXMLReporter.detect(process.argv.slice(2))){
     JasmineXMLReporter.attach_to(jasmine);
 }
