@@ -1,14 +1,16 @@
 var JasmineXMLReporter = {
     output_dir: './',
     junitreport: false,
+    filePrefix: 'results',
     detect: function(arguments){
         arguments.forEach(function (param, i, args) {
             var pair = param.split('=');
             var name = pair[0];
             var value = pair.length > 1 ? pair[1] : '';
             switch(name){
+                case '--filePrefix':
                 case '--output':
-                    if(value) JasmineXMLReporter.output_dir = value;
+                    if(value) JasmineXMLReporter[name.substr(2)] = value;
                     return JasmineXMLReporter.remove(param);
                 case '--junitreport':
                     JasmineXMLReporter.junitreport = true;
@@ -26,7 +28,7 @@ var JasmineXMLReporter = {
         var reporters = require('jasmine-reporters');
         var junitReporter = new reporters.JUnitXmlReporter({
             savePath: this.output_dir,
-            filePrefix: 'results'
+            filePrefix: this.filePrefix
         });
         runner.getEnv().addReporter(junitReporter);
     }

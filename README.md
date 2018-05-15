@@ -29,6 +29,10 @@ To run tests, generate a JUnit XML report and place the output in a specific fol
 
     ./node_modules/jasmine-xml-reporter/bin/jasmine.js --junitreport --output=shippable/testresults/
 
+Additionally you can specify the output file prefix name (default output file is `results.xml`, so you can change the `results` prefix):
+
+    ./node_modules/jasmine-xml-reporter/bin/jasmine.js --junitreport --output=shippable/testresults/ --filePrefix=myTestResults
+
 If `npm test` is already an alias to `./node_modules/jasmine-xml-reporter/bin/jasmine.js`, then run with:
 
     npm test -- --junitreport --output=shippable/testresults/
