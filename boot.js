@@ -9,8 +9,10 @@ var JasmineXMLReporter = {
             var value = pair.length > 1 ? pair[1] : '';
             switch(name){
                 case '--filePrefix':
+                    if(value) JasmineXMLReporter.filePrefix = value;
+                    return JasmineXMLReporter.remove(param);
                 case '--output':
-                    if(value) JasmineXMLReporter[name.substr(2)] = value;
+                    if(value) JasmineXMLReporter.output_dir = value;
                     return JasmineXMLReporter.remove(param);
                 case '--junitreport':
                     JasmineXMLReporter.junitreport = true;
