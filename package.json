@@ -1,6 +1,6 @@
 {
   "name": "jasmine-xml-reporter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "jasmine-reporters": "^2.2.0"
   },
